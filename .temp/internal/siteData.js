@@ -16,11 +16,47 @@ export const siteData = {
   ],
   "pages": [
     {
+      "title": "技术小点",
       "frontmatter": {},
       "regularPath": "/blog/",
       "relativePath": "blog/README.md",
       "key": "v-407fd998",
-      "path": "/blog/"
+      "path": "/blog/",
+      "lastUpdated": "5/6/2021, 4:14:39 PM"
+    },
+    {
+      "title": "文章2",
+      "frontmatter": {
+        "title": "文章2"
+      },
+      "regularPath": "/blog/article-2.html",
+      "relativePath": "blog/article-2.md",
+      "key": "v-4aaae87a",
+      "path": "/blog/article-2.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Article 2",
+          "slug": "article-2"
+        }
+      ]
+    },
+    {
+      "title": "文章1",
+      "frontmatter": {
+        "title": "文章1"
+      },
+      "regularPath": "/blog/article-1.html",
+      "relativePath": "blog/article-1.md",
+      "key": "v-4617b776",
+      "path": "/blog/article-1.html",
+      "headers": [
+        {
+          "level": 2,
+          "title": "Article 1",
+          "slug": "article-1"
+        }
+      ]
     },
     {
       "title": "Home",
@@ -51,7 +87,16 @@ export const siteData = {
       "relativePath": "README.md",
       "key": "v-92d16696",
       "path": "/",
-      "lastUpdated": "5/6/2021, 11:28:50 AM"
+      "lastUpdated": "5/6/2021, 4:14:39 PM"
+    },
+    {
+      "title": "导航之路",
+      "frontmatter": {},
+      "regularPath": "/guide/",
+      "relativePath": "guide/README.md",
+      "key": "v-36f68e70",
+      "path": "/guide/",
+      "lastUpdated": "5/6/2021, 4:14:39 PM"
     },
     {
       "frontmatter": {},
@@ -60,13 +105,6 @@ export const siteData = {
       "key": "v-220b06ee",
       "path": "/config.html",
       "lastUpdated": "5/6/2021, 11:28:50 AM"
-    },
-    {
-      "frontmatter": {},
-      "regularPath": "/guide/",
-      "relativePath": "guide/README.md",
-      "key": "v-36f68e70",
-      "path": "/guide/"
     }
   ],
   "themeConfig": {
@@ -87,6 +125,17 @@ export const siteData = {
         "text": "导航",
         "link": "/guide/"
       }
-    ]
+    ],
+    "sidebar": {
+      "/blog/": [
+        "",
+        "article-1",
+        "article-2"
+      ],
+      "/guide/": [
+        ""
+      ]
+    },
+    "smoothScroll": true
   }
 }

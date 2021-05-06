@@ -21,6 +21,26 @@ module.exports = {
 	  	nav: [
 	  		{ text: '主页', link: '/' },
 	  		{ text: '文章', link: '/blog/' },
-			{ text: '导航', link: '/guide/' }
-	  	]
+			{ text: '导航', link: '/guide/' },
+	//多语言，暂不支持
+	// 		 {
+    //     text: '选择语言',
+    //     ariaLabel: 'Language Menu',
+    //     items: [
+    //       { text: '中文(默认)', link: '/language/chinese/' },
+    //       { text: 'English', link: '/language/english/',disabled:true }
+    //     ]
+    //   }
+	  	],
+	sidebar:{
+		'/blog/':[
+			'',
+			'article-1',
+			'article-2',
+		],
+		'/guide/':[
+			''
+		]
+	},
+	smoothScroll: true
 }}
